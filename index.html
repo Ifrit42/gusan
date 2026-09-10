@@ -1,360 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ifrit Can Code</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAT.Dev | Ghosana Wijaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
-<style>
-.btn {
-  background-color: #7c0000;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  text-decoration: none;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 1rem;
-}
-      
-.btn:hover {
-  background-color: #7c0000;
-  box-shadow: 0 0 40px rgba(255, 0, 0, 0.685);
-  color: white;
-}
-.tech-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.tech {
-  background-color: #7a0000;
-  border: none;
-  padding: 4px 12px;
-  color: white;
-  border-radius: 10px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
-
-.tech img {
-  width: 13px;
-  height: auto;
-}
-.about {
-  background-color: #1a1a1a;
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2.5rem;
-  color: #ff4d4d;
-  margin-bottom: 1rem;
-}
-
-.about p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.125rem;
-  color: #bbb;
-}
-</style>
 <body>
-<div class="desktop">
-<header>
-  <nav class="navbar">
-    <div class="nav-links">
-      <div class="nav-logo">
-        <a class="logo-btn" href="https://www.instagram.com/ifrit.42/"><img src="assets/logo.png" alt="Logo" class="logo" href=/></a>
-      </div>
-      <ul class="navbar-ul">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#project" class="nav-link">Project</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+    <header>
+        <div class="nav-inner">
+            <a href="#home" class="logo-link">
+                <img src="assets/logo.png" alt="CAT.Dev" />
+                <span>cat<span>.</span>dev</span>
+            </a>
 
-  
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <p>Hello, my name is</p>
-      <h1>Ghosana Wijaya</h1>
-      <p>
-        All in one man. I am a Photographer, Videographer, a Video/Photo Editor and a Junior Software Developer at the same time.
-      </p>
-      <a class="btn hero-btn" href="#about">More About Me</a>
-    </div>
-      <div class="hero-image">
-        <img src="assets/heroimg.png" alt="Ghosana Wijaya">
-      </div>
-  </section>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-  <section id="about" class="about-content">
-      <div class="about-container">
-        <div class="about-img image-box">
-          <img src="assets/IMG_9954-Enhanced-NR.jpg" alt="Image 1">
-          <img src="assets/codess.png" alt="Image 2">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-    <div class="about-text">
-      <p>
-        I am a passionate software developer specializing in website design and development, 
-        with a strong eye for aesthetics and user experience. In addition to my technical expertise, 
-        I am also a dedicated photographer, videographer, and photo/video editor, 
-        allowing me to bring a creative perspective to every project I work on.
-        <br><br>
-        Currently, I am a student at SMK TI Bali Global Denpasar (Bali Global IT Vocational High School) 
-        in Denpasar, Bali. I’ve had the opportunity to intern at Astra Motor Denpasar for over a year, 
-        during which I successfully completed two major projects that contributed to their digital operations 
-        and internal systems.
-      </p>
-      <h4>What im good at :</h4>
-      <div class="skills">
-        <button class="btn"><img class="skills-img" src="assets/html icon.png" alt="HTML5"> HTML 5</button>
-        <button class="btn"><img class="skills-img" src="assets/css icon.png" alt="CSS"> CSS</button>
-        <button class="btn"><img class="skills-img" src="assets/js icon.png" alt="JS"> JS</button>
-        <button class="btn"><img class="skills-img" src="assets/python.png" alt="Python"> Python</button>
-        <button class="btn"><img class="skills-img" src="assets/react-icon.png" alt="React"> React</button>
-        <button class="btn"><img class="skills-img" src="assets/php.png" alt="PHP"> PHP</button>
-        <button class="btn"><img class="skills-img" src="assets/premiere-pro.png" alt="Premiere"> Premiere Pro</button>
-        <button class="btn"><img class="skills-img" src="assets/photoshop-lightroom-classic.png" alt="LRC"> Lightroom</button>
-        <button class="btn"><img class="skills-img" src="assets/figma.png" alt="Figma"> Figma</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="project" class="project-section">
-  <br>
-  <div class="project-grid">
-    <div class="project-1">
-      <div class="tech-icons">
-        <button class="tech btn"><img src="assets/html icon.png" alt=""> HTML 5</button>
-        <button class="tech btn"><img src="assets/css icon.png" alt=""> CSS</button>
-        <button class="tech btn"><img src="assets/js icon.png" alt=""> JS</button>
-        <button class="tech btn"><img src="assets/php.png" alt=""> PHP</button>
-      </div>
-      <img src="assets/project1.png" class="project-img" alt="Admin Dashboard">
-    </div>
-    <div class="project-2">
-      <div class="tech-icons">
-        <button class="tech btn"><img src="assets/html icon.png" alt=""> HTML 5</button>
-        <button class="tech btn"><img src="assets/css icon.png" alt=""> CSS</button>
-        <button class="tech btn"><img src="assets/js icon.png" alt=""> JS</button>
-        <button class="tech btn"><img src="assets/react-icon.png" alt=""> React</button>
-      </div>
-      <div class="project-3">
-        <img src="assets/project2.png" class="project-img" alt="Comparison Table">
-      </div>
-    </div>
-    <div class="project-3">
-      <div class="tech-icons">
-        <button class="tech btn"><img src="assets/premiere-pro.png" alt=""> Premiere Pro</button>
-      </div>
-      <img src="assets/project3.png" class="project-img" alt="Video Edit">
-    </div>
-  </div>
-  <div class="project-grid2 project-section2">
-    <div class="project-4">
-      <div class="tech-icons">
-        <button class="tech btn"><img src="assets/python.png" alt="">Python</button>
-        <button class="tech btn"><img src="assets/js icon.png" alt="">JS</button>
-        <button class="tech btn"><img src="assets/env.png" alt="">.env</button>
-      </div>
-      <img src="assets/ifrit-bot.png" class="project-img2" alt="Lightroom">
-    </div>
-    <div class="project-text">
-      <h3>Want to see more result?</h3>
-      <a class="btn" href="https://www.instagram.com/ifrit.42/">Click Here</a>
-    </div>
-    <div class="project-5">
-      <div class="tech-icons">
-        <button class="tech btn"><img src="assets/photoshop-lightroom-classic.png" alt="">Lightroom</button>
-      </div>
-      <img src="assets/project5.png" class="project-img2" alt="Lightroom">
-    </div>
-  </div>
-</section>
-
-<footer class="footer-section">
-  <div class="footer-content">
-    <div class="footer-text">
-      <h2>Let's work together on your next project!</h2>
-      <p>Teamwork and collaboration is key! Let's work together on your next project to the flawless result for your project!</p>
-      <p>I’m open for collaboration and freelance projects. Whether you need a website, photo/video edit, or design – let’s talk!</p>
-    </div>
-
-    <div id="contact" class="footer-contacts">
-      <div class="contact-item">
-        <img src="assets/gmail.png" alt="Gmail Icon" />
-        <a href="mailto:ifrit.cancode@gmail.com">ifrit.cancode@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <img src="assets/github.png" alt="GitHub Icon" />
-        <a href="https://github.com/Ifrit42" target="_blank">https://github.com/Ifrit42</a>
-      </div>
-      <div class="contact-item">
-        <img src="assets/instagram.png" alt="Instagram Icon" />
-        <a href="https://www.instagram.com/ifrit.42/" target="_blank">https://www.instagram.com/ifrit.42/</a>
-      </div>
-      <div class="contact-item">
-        <img src="assets/discord blue.png" alt="Discord Icon" />
-        <a href="https://discord.gg/3dTdy9FZ9K" target="_blank">https://discord.gg/3dTdy9FZ9K</a>
-      </div>
-      <h6>©2024-2025 Ifrit Can Code</h6>
-    </div>
-  </div>
-</footer>
-</div>
-
-<div class="mobile">
-  <section class="mobile-card">
-    <div class="profile-section">
-      <img src="assets/heroimg2.png" class="profile-img" alt="Profile">
-      <h1 class="name">Ghosana Wijaya</h1>
-      <p class="role">Photographer | Developer</p>
-      <div class="contact-links">
-        <a href="mailto:ifrit.cancode@gmail.com"><img class="mobile-icon" src="assets/gmail.png" alt="Gmail Icon" /></a>
-        <a href="https://github.com/Ifrit42"><img class="mobile-icon" src="assets/github.png" alt="GitHub Icon" /></a>
-        <a href="https://www.instagram.com/ifrit.42/"><img class="mobile-icon" src="assets/instagram.png" alt="Instagram Icon" /></a>
-      </div>
-    </div>
-
-    <div class="resume-section">
-      <h2 class="skills-txt" style="color: white;">Skills</h2>
-      <ul class="skills-list">
-        <li>Photography & Videography<span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="off"></span></span></li>
-        <li>PremierePro & LRC<span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="off"></span></span></li>
-        <li>Photoshop <span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="off"></span><span class="off"></span></span></li>
-        <li>CSS <span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="off"></span><span class="off"></span></span></li>
-        <li>HTML 5 <span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="off"></span><span class="off"></span></span></li>
-        <li>PHP <span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="off"></span><span class="off"></span><span class="off"></span></span></li>
-        <li>JavaScript & React <span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span></span></li>
-        <li>Python<span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span></span></li>
-      </ul>
-    </div>
-
-<div class="project-section">
-  <div class="about-mobile">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate software developer specializing in website design and development,
-      with a strong eye for aesthetics and user experience. In addition to my technical expertise,
-      I am also a dedicated photographer, videographer, and photo/video editor,
-      allowing me to bring a creative perspective to every project I work on.
-    </p>
-    <p>
-      I am currently a student at SMK TI Bali Global Denpasar (Bali Global IT Vocational High School) in Denpasar, Bali.
-      I've had the opportunity to intern at Astra Motor Denpasar for over a year, during which I successfully completed
-      two major projects that contributed to their digital operations and internal systems.
-    </p>
-  </div>
-  <h2 class="text-center">My Projects</h2>
-  <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <div class="project-card">
-          <img src="assets/project1.png" class="project-img" alt="Project">
-          <h4>Matprom Honda</h4>
-          <p>UI/UX Design</p>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-inner">
+            <div class="hero-text fade-in-left">
+                <p class="greeting">Hello, I'm <span>Ghosana Wijaya</span></p>
+                <h1>
+                    <span class="highlight">Full-Stack</span><br />
+                    Creator &amp; Designer
+                </h1>
+                <p class="tagline">
+                    Photographer &bull; Videographer &bull; Editor &bull; Junior Software Developer<br />
+                    I blend code with creativity to build digital experiences that resonate.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-gold">View Projects</a>
+                    <a href="#contact" class="btn-outline-gold">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-right">
+                <img src="assets/gusan-purple.png" alt="Ghosana Wijaya" />
+            </div>
         </div>
-      </div>
+        <div class="hero-dots">
+            <span></span><span></span><span></span>
+        </div>  
+    </section>
 
-      <div class="carousel-item">
-        <div class="project-card">
-          <img src="assets/project2.png" class="project-img" alt="Project">
-          <h4>Table App</h4>
-          <p>HTML, JS, Data Tables</p>
+    <section id="about" class="about-section">
+        <div class="about-inner">
+            <div class="about-visual fade-in-left">
+                <div class="img-card">
+                    <img src="assets/IMG_9954-Enhanced-NR.jpg" alt="IMG 1" />
+                </div>
+                <div class="img-card">
+                    <img src="assets/IMG_9867.jpg" alt="IMG 2" />
+                </div>
+            </div>
+            <div class="about-text fade-in-right">
+                <span class="section-label">About Me</span>
+                <h2>Building the <span class="gold-text">Future</span>, One Line at a Time</h2>
+                <div class="bio">
+                    <p>
+                        I'm a <strong>software developer</strong> with a passion for clean, elegant design and
+                        seamless user experiences. I specialize in <strong>full-stack web development</strong>,
+                        but I also bring a creative edge as a <strong>photographer, videographer, and editor</strong>.
+                        This blend lets me craft projects that are both technically sound and visually captivating.
+                    </p>
+                    <p style="margin-top: 12px;">
+                        Currently a student at <strong>Telkom University Bandung</strong>, I've interned at
+                        <strong>Astra Motor Denpasar</strong> for over a year, delivering two major digital solutions
+                        that streamlined their operations.
+                    </p>
+                </div>
+
+                <h4 style="font-weight:600; font-size:0.95rem; margin-top:8px; color:var(--text-muted);">
+                    🛠 &nbsp;Tech &amp; Tools
+                </h4>
+                <div class="skills-grid">
+                    <span class="skill-badge"><img src="assets/html icon.png" alt="HTML" />HTML 5</span>
+                    <span class="skill-badge"><img src="assets/css icon.png" alt="CSS" />CSS</span>
+                    <span class="skill-badge"><img src="assets/js icon.png" alt="JS" />JavaScript</span>
+                    <span class="skill-badge"><img src="assets/react-icon.png" alt="React" />React</span>
+                    <span class="skill-badge"><img src="assets/python.png" alt="Python" />Python</span>
+                    <span class="skill-badge"><img src="assets/php.png" alt="PHP" />PHP</span>
+                    <span class="skill-badge"><img src="assets/figma.png" alt="Figma" />Figma</span>
+                    <span class="skill-badge"><img src="assets/premiere-pro.png" alt="Premiere" />Premiere Pro</span>
+                    <span class="skill-badge"><img src="assets/lightroom-classic.png" alt="LRC" />Lightroom</span>
+                    <span class="skill-badge"><img src="assets/photoshop.png" alt="Photoshop" />Photoshop</span>
+                    <span class="skill-badge"><img src="assets/flutter-icon.png" alt="Flutter" />Flutter</span>
+                    <span class="skill-badge"><img src="assets/dart-icon.png" alt="Dart" />Dart</span>
+                    <span class="skill-badge"><img src="assets/mysql-logo.png" alt="MySQL" />MySQL</span>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Add more project slides here if needed -->
+        <div class="section-divider"></div>
 
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-
-  <h2 class="text-center mt-5">My Photos</h2>
-  <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <div class="project-card">
-          <img src="assets/project4.png" class="project-img" alt="Project">
-          <h4>Ogoh Ogoh Parade</h4>
-          <p>Photo & Video Editing</p>
+        <div class="education-header fade-in">
+            <span class="section-label">Education &amp; Community</span>
+            <h2 class="section-title">Where I <span class="gold-text">Learned</span> &amp; Grew</h2>
+            <p class="section-sub">A blend of formal education, bootcamps, and active community involvement.</p>
         </div>
-      </div>
 
-      <div class="carousel-item">
-        <div class="project-card">
-          <img src="assets/project5.png" class="project-img" alt="Project">
-          <h4>Cultural Shoot</h4>
-          <p>Photo & Video Editing</p>
+        <div class="edu-grid">
+            <!-- 1. Tel-U Bandung -->
+            <div class="edu-card fade-in-up delay-1">
+                <div class="edu-logo">
+                    <img style="background-color: white;" src="assets/logo-telkom.png" alt="Telkom University logo" />
+                </div>
+                <div class="edu-content">
+                    <span class="status-badge" style="background:rgba(74,122,156,0.15);color:var(--accent-blue);border-color:rgba(74,122,156,0.15);">🎓 Active Student</span>
+                    <h3>Telkom University Bandung</h3>
+                    <p class="edu-major">Software Engineering (RPL)</p>
+                    <p class="edu-desc">Currently pursuing a degree in Informatics, deepening expertise in software development, database systems, and network engineering.</p>
+                </div>
+            </div>
+
+            <!-- 2. Google Developer Groups - Tel-U Bandung -->
+            <div class="edu-card fade-in-up delay-2">
+                <div class="edu-logo">
+                    <img style="background-color: white;" src="assets/logo-gdg.png" alt="Google Developer Groups Tel-U logo" />
+                </div>
+                <div class="edu-content">
+                    <span class="status-badge" style="background:rgba(201,168,76,0.08);color:var(--gold-light);border-color:rgba(201,168,76,0.10);">👥 Active Member</span>
+                    <h3>Google Developer Groups - Tel-U Bandung</h3>
+                    <p class="edu-major">Community &amp; Tech Enthusiast</p>
+                    <p class="edu-desc">Engaged in tech talks, hackathons, and collaborative projects with fellow developers and Google technologies.</p>
+                </div>
+            </div>
+
+            <!-- 3. Globaliti -->
+            <div class="edu-card fade-in-up delay-3">
+                <div class="edu-logo">
+                    <img style="background-color: white;" src="assets/Logo-TI.png" alt="SMK TI Bali Global Denpasar logo" />
+                </div>
+                <div class="edu-content">
+                    <span class="status-badge">🎓 Alumni</span>
+                    <h3>SMK TI Bali Global Denpasar</h3>
+                    <p class="edu-major">Software Engineering (RPL)</p>
+                    <p class="edu-desc">Graduated with a strong foundation in full-stack development, software architecture, and UI/UX principles.</p>
+                </div>
+            </div>
+
+            <!-- 4. Broadcast -->
+            <div class="edu-card fade-in-up delay-4">
+                <div class="edu-logo">
+                    <img style="background-color: white;" src="assets/logo-bc.png" alt="Broadcast logo" />
+                </div>
+                <div class="edu-content">
+                    <span class="status-badge live">🎓 Alumni</span>
+                    <h3>Broadcast.Official</h3>
+                    <p class="edu-major">Videography • Photography • Editing</p>
+                    <p class="edu-desc">Hands-on experience in videography, photography, and post-production — the foundation of my creative workflow today.</p>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Add more photo slides here -->
+    </section>
 
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-  <div class="more-result">
-    <h3>More Photo/Video Editing Result?</h3>
-    <a class="btn" href="https://www.instagram.com/ifrit.42/">Click Here</a>
-  </div>
-</div>
-  <div class="mobile-footer">
-  <h2>Let's Work Together</h2>
-  <p>Teamwork and collaboration is key! Let's work together on your next project to the flawless result for your project!</p>
-  <p>I’m open for collaboration and freelance projects. Whether you need a website, photo/video edit, or design – let’s talk!</p>
-  
-  <div class="footer-contacts">
-    <div class="contact-item">
-      <img src="assets/gmail.png" alt="Email Icon">
-      <a href="mailto:ifrit.cancode@gmail.com">ifrit.cancode@gmail.com</a>
-    </div>
-    <div class="contact-item">
-      <img src="assets/instagram.png" alt="Instagram Icon">
-      <a href="https://www.instagram.com/ifrit.42/" target="_blank">@ifrit.42</a>
-    </div>
-    <div class="contact-item">
-      <img src="assets/github.png" alt="GitHub Icon">
-      <a href="https://github.com/Ifrit42" target="_blank">github.com/Ifrit42</a>
-    </div>
-    <div class="contact-item">
-      <img src="assets/discord blue.png" alt="Discord Icon">
-      <a href="https://discord.gg/3dTdy9FZ9K" target="_blank">Discord Server</a>
-    </div>
-    <h6>©2024-2025 Ifrit Can Code</h6>
-  </div>
-</div>
-  </section>
+    <section id="projects" class="projects">
+        <div class="projects-header fade-in">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Projects I've <span class="gold-text">Crafted</span></h2>
+            <p>From web apps to design systems — here's a selection of my recent work.</p>
+        </div>
 
-</div>
+        <div class="project-swiper-wrapper">
+            <div class="swiper projectSwiper">
+                <div class="swiper-wrapper">
 
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                    <!-- 1. ahass_app -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="assets/ahass-app.png" alt="ahass_app" class="card-img" />
+                            <div class="card-body">
+                                <span class="status-badge dev">⚡ in development</span>
+                                <div class="tech-stack">
+                                    <span class="tech-tag"><img src="assets/flutter-icon.png" alt="Flutter" /> Flutter</span>
+                                    <span class="tech-tag"><img src="assets/dart-icon.png" alt="Dart" /> Dart</span>
+                                </div>
+                                <h3>ahass_app</h3>
+                                <p class="project-desc">Mobile app for Astra Motor Bali workshops — streamlining service management and operations.</p>
+                                <div class="project-links">
+                                    <span style="color:var(--text-muted); font-size:0.8rem;">🔒 Private repo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. matprom -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="assets/project1.png" alt="matprom" class="card-img" />
+                            <div class="card-body">
+                                <span class="status-badge live">● live</span>
+                                <div class="tech-stack">
+                                    <span class="tech-tag"><img src="assets/php.png" alt="PHP" /> PHP</span>
+                                    <span class="tech-tag"><img src="assets/html icon.png" alt="HTML" /> HTML</span>
+                                    <span class="tech-tag"><img src="assets/css icon.png" alt="CSS" /> CSS</span>
+                                    <span class="tech-tag"><img src="assets/js icon.png" alt="JS" /> JS</span>
+                                </div>
+                                <h3>Matprom</h3>
+                                <p class="project-desc">Promotion materials stock monitoring for the Marketing department at Astra Motor Bali.</p>
+                                <div class="project-links">
+                                    <a href="https://dealerhondabali.com/matprom/" target="_blank">🔗 Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. pelanggaran-siswa -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="assets/pelanggaran-siswa.png" alt="pelanggaran-siswa" class="card-img" />
+                            <div class="card-body">
+                                <span class="status-badge" style="background:rgba(201,168,76,0.08);color:var(--gold-light);border-color:rgba(201,168,76,0.10);">✓ production</span>
+                                <div class="tech-stack">
+                                    <span class="tech-tag"><img src="assets/php.png" alt="PHP" /> PHP</span>
+                                    <span class="tech-tag"><img src="assets/html icon.png" alt="HTML" /> HTML</span>
+                                    <span class="tech-tag"><img src="assets/css icon.png" alt="CSS" /> CSS</span>
+                                    <span class="tech-tag"><img src="assets/js icon.png" alt="JS" /> JS</span>
+                                </div>
+                                <h3>Pelanggaran Siswa</h3>
+                                <p class="project-desc">Full CRUD system for monitoring student &amp; teacher data. Generates official violation letters.</p>
+                                <div class="project-links">
+                                    <span style="color:var(--text-muted); font-size:0.8rem;">🔒 Internal tool</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. stock-system -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="assets/stock-system.png" alt="stock-system" class="card-img" />
+                            <div class="card-body">
+                                <span class="status-badge live">● live</span>
+                                <div class="tech-stack">
+                                    <span class="tech-tag"><img src="assets/php.png" alt="PHP" /> PHP</span>
+                                    <span class="tech-tag"><img src="assets/html icon.png" alt="HTML" /> HTML</span>
+                                    <span class="tech-tag"><img src="assets/css icon.png" alt="CSS" /> CSS</span>
+                                    <span class="tech-tag"><img src="assets/js icon.png" alt="JS" /> JS</span>
+                                </div>
+                                <h3>Stock System</h3>
+                                <p class="project-desc">Spareparts stock monitoring for the Sparepart department at Astra Motor Bali. Updated daily.</p>
+                                <div class="project-links">
+                                    <a href="https://dealerhondabali.com/stock-system/" target="_blank">🔗 Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Website Re-design -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="assets/unmas-redesign.png" alt="Website Re-design" class="card-img" />
+                            <div class="card-body">
+                                <span class="status-badge" style="background:rgba(108,58,138,0.12);color:var(--accent-purple);border-color:rgba(108,58,138,0.15);">🎨 design</span>
+                                <div class="tech-stack">
+                                    <span class="tech-tag"><img src="assets/figma.png" alt="Figma" /> Figma</span>
+                                    <span class="tech-tag"><img src="assets/env.png" alt="AI" /> AI</span>
+                                </div>
+                                <h3>Univ. Mahasaraswati Re-design</h3>
+                                <p class="project-desc">Complete UI/UX redesign using Figma AI. Modern, clean, and accessible layout.</p>
+                                <div class="project-links">
+                                    <span style="color:var(--text-muted); font-size:0.8rem;">📐 In review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Ifrit Bot -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="assets/ifrit-bot.png" alt="Ifrit Bot" class="card-img" />
+                            <div class="card-body">
+                                <span class="status-badge dev">⚡ in development</span>
+                                <div class="tech-stack">
+                                    <span class="tech-tag"><img src="assets/python.png" alt="Python" /> Python</span>
+                                    <span class="tech-tag"><img src="assets/js icon.png" alt="JS" /> JS</span>
+                                    <span class="tech-tag"><img src="assets/env.png" alt=".env" />.env</span>
+                                </div>
+                                <h3>Ifrit Bot</h3>
+                                <p class="project-desc">Discord bot focused on crypto analysis and trading signals. Recently overhauled architecture.</p>
+                                <div class="project-links">
+                                    <a href="https://ifrit42.github.io/ifrit-bot/" target="_blank">🔗 Doc Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Video Editing -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="assets/project3.png" alt="Video Editing" class="card-img" />
+                            <div class="card-body">
+                                <span class="status-badge" style="background:rgba(201,168,76,0.08);color:var(--gold-light);border-color:rgba(201,168,76,0.10);">🎬 portfolio</span>
+                                <div class="tech-stack">
+                                    <span class="tech-tag"><img src="assets/premiere-pro.png" alt="Premiere Pro" /> Premiere Pro</span>
+                                </div>
+                                <h3>Video Editing</h3>
+                                <p class="project-desc">Professional video editing for events, promos, and social media. Color grading, motion graphics, and sound design.</p>
+                                <div class="project-links">
+                                    <a href="https://www.instagram.com/ifrit.42/reels/" target="_blank">📷 View Reels</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Photo Editing -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="assets/photo-editing.png" alt="Photo Editing" class="card-img" />
+                            <div class="card-body">
+                                <span class="status-badge" style="background:rgba(201,168,76,0.08);color:var(--gold-light);border-color:rgba(201,168,76,0.10);">📸 portfolio</span>
+                                <div class="tech-stack">
+                                    <span class="tech-tag"><img src="assets/lightroom-classic.png" alt="Lightroom" /> Lightroom</span>
+                                    <span class="tech-tag"><img src="assets/photoshop.png" alt="Photoshop" /> Photoshop</span>
+                                </div>
+                                <h3>Photo Editing</h3>
+                                <p class="project-desc">Advanced photo retouching, color grading, and manipulation. From portraits to product photography.</p>
+                                <div class="project-links">
+                                    <a href="https://www.instagram.com/ifrit.42/" target="_blank">📸 View Gallery</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand fade-in">
+                <a href="#home" class="logo-link">
+                    <img src="assets/logo.png" alt="Ifrit Can Code" />
+                    <span>ifrit<span>.</span>dev</span>
+                </a>
+                <p>
+                    I'm open for collaboration and freelance projects. Whether you need a website,
+                    photo/video edit, or a custom design — let's create something remarkable together.
+                </p>
+            </div>
+
+            <div class="footer-contacts fade-in delay-2">
+                <div class="contact-item">
+                    <img src="assets/gmail.png" alt="Email" />
+                    <a href="mailto:ifrit.cancode@gmail.com">ifrit.cancode@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <img src="assets/github.png" alt="GitHub" />
+                    <a href="https://github.com/Ifrit42" target="_blank">github.com/Ifrit42</a>
+                </div>
+                <div class="contact-item">
+                    <img src="assets/instagram.png" alt="Instagram" />
+                    <a href="https://www.instagram.com/ifrit.42/" target="_blank">@ifrit.42</a>
+                </div>
+                <div class="contact-item">
+                    <img src="assets/discord blue.png" alt="Discord" />
+                    <a href="https://discord.gg/mSGT3wNntX " target="_blank">Discord Server</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2024–2026 <span>Cakra Artha Teknologi</span> &bull; Built with precision &amp; passion.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
